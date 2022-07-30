@@ -1,5 +1,15 @@
 package marcombo.lcriadof.capitulo12
 
+/*
+El gran libro de Kotlin
+(para programadores de back end)
+Editorial: Marcombo (https://www.marcombo.com/)
+Autor: Luis Criado Fernández (http://luis.criado.online/)
+CAPÍTULO 12: Aplicaciones war con ktor.
+ */
+
+
+
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.response.*

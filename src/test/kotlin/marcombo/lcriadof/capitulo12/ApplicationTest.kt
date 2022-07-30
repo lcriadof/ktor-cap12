@@ -12,7 +12,13 @@ import io.ktor.client.statement.*
 import kotlin.test.*
 import io.ktor.server.testing.*
 import marcombo.lcriadof.capitulo12.plugins.*
-
+/*
+El gran libro de Kotlin
+(para programadores de back end)
+Editorial: Marcombo (https://www.marcombo.com/)
+Autor: Luis Criado Fernández (http://luis.criado.online/)
+CAPÍTULO 12: Aplicaciones war con ktor.
+ */
 class ApplicationTest {
     @Test
     fun testRoot() = testApplication {
