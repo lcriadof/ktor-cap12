@@ -15,19 +15,11 @@ import io.ktor.util.*
 import java.io.*
 
 
-
-//data class CartSession(val userID: String, var verbosConjugados: MutableList<rootVerbo>)
-
 data class CartSession(val userID: String, var productIDs: MutableList<Int>)
-
-
-
 
 fun Application.configureSesionesEnServidor() {
     var numeroUsurActivos=0
     var parar=false
-
-
 
     install(Sessions) {
         val secretSignKey = hex("6819b57a326945c1968f45236589")

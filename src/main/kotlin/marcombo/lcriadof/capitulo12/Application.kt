@@ -9,6 +9,7 @@ CAPÍTULO 12: Aplicaciones war con ktor.
  */
 
 
+
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.response.*
@@ -17,27 +18,15 @@ import io.ktor.server.routing.*
 import io.ktor.server.tomcat.*
 import marcombo.lcriadof.capitulo12.plugins.*
 
-/*
-fun main() {
-
-  //  embeddedServer(Netty, port = 8081, host = "127.0.0.1") {
-    embeddedServer(Tomcat, port = 8081, host = "127.0.0.1") {
-        configureSerialization()
-        configureRouting()
-    }.start(wait = true)
-}
- */
-
 
 fun main(args: Array<String>) {
-    io.ktor.server.tomcat.EngineMain.main(args)
+    io.ktor.server.tomcat.EngineMain.main(args) // [1]
 }
 
 
-fun Application.module() {
-    configureSerialization()
-    configureRouting()
-    configureSesionesEnServidor() // gestion de las sesiones
-    configureRoutingVerbos() // gestion de verbos
-
+fun Application.module() { // [2]
+    configureSerialization() // [3]
+    // configureRouting() // [4]
+    configureSesionesEnServidor() // [5] gestion de las sesiones
+    configureRoutingVerbos() // [6] gestion de verbos
 }
