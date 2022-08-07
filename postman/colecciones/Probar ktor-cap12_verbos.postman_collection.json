@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "5ca48c1e-bc39-4f13-be09-697cd2d7eddd",
+		"name": "Probar ktor-cap12_verbos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22481179"
+	},
+	"item": [
+		{
+			"name": "Añadir infinitivo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/verbo/add0?verb=cantar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"verbo",
+						"add0"
+					],
+					"query": [
+						{
+							"key": "verb",
+							"value": "cantar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir infinitivo 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"verbo\": \"ser\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/verbo/add1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"verbo",
+						"add1"
+					],
+					"query": [
+						{
+							"key": "verb",
+							"value": "cantar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conjugar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/verbo/conjugar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"verbo",
+						"conjugar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar infinitivo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"verbo\": \"cantar\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/verbo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"verbo"
+					],
+					"query": [
+						{
+							"key": "verb",
+							"value": "casar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

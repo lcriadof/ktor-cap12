@@ -15,13 +15,13 @@ import io.ktor.util.*
 import java.io.*
 
 
-data class CartSession(val userID: String, var productIDs: MutableList<Int>)
+data class CartSession(val userID: String, var productIDs: MutableList<Int>) // [1]
 
 fun Application.configureSesionesEnServidor() {
-    var numeroUsurActivos=0
-    var parar=false
+    var numeroUsurActivos=0 // [2]
+    var parar=false // [3]
 
-    install(Sessions) {
+    install(Sessions) { // [4]
         val secretSignKey = hex("6819b57a326945c1968f45236589")
         header<CartSession>("cart_session", directorySessionStorage(File("build/.sessions"))) {
             transform(SessionTransportTransformerMessageAuthentication(secretSignKey))
@@ -30,7 +30,7 @@ fun Application.configureSesionesEnServidor() {
     routing {
         get("/login") {
             if (parar==false){
-                call.sessions.set(CartSession(userID = "123", productIDs = mutableListOf(1, 3, 7)))
+                call.sessions.set(CartSession(userID = "user123", productIDs = mutableListOf(1, 5, 1112)))
                 val sesionacrual=call.sessions.get<CartSession>()
                 numeroUsurActivos++
                 call.respond(mensaje("Acceso concedido ${call.sessions.get<CartSession>()}"))
@@ -39,7 +39,7 @@ fun Application.configureSesionesEnServidor() {
             }
         }
 
-        get("/cart") {
+        get("/infoSesion") {
             val cartSession = call.sessions.get<CartSession>()
             if (cartSession != null) {
                 call.respond(mensaje("Product IDs: ${cartSession.productIDs}"))
