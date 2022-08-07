@@ -16,7 +16,6 @@ import io.ktor.server.routing.*
 data class autor(val nombre: String, val website: String)
 
 
-
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
         gson {

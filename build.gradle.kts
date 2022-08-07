@@ -35,6 +35,13 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("io.ktor:ktor-server-servlet:$ktor_version")
+    // https://mvnrepository.com/artifact/io.github.lcriadof/sofia
+    implementation("io.github.lcriadof:sofia:1.0")
+    // html estatico
+    implementation("io.ktor:ktor-server-html-builder:$ktor_version")
+    implementation("ch.qos.logback:logback-classic:$logback_version")
+    // control de sesiones
+    implementation("io.ktor:ktor-server-sessions:$ktor_version")
 }
 
 // Servidor
