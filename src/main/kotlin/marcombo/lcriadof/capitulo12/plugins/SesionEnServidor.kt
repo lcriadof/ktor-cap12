@@ -19,6 +19,7 @@ data class CartSession(val userID: String, var productIDs: MutableList<Int>) // 
 
 fun Application.configureSesionesEnServidor() {
     var numeroUsurActivos=0 // [2]
+    var numeroUsuariosHistóricos=0
     var parar=false // [3]
 
     install(Sessions) { // [4]
@@ -30,10 +31,10 @@ fun Application.configureSesionesEnServidor() {
     routing {
         get("/login") {
             if (parar==false){
-                call.sessions.set(CartSession(userID = "user123", productIDs = mutableListOf(1, 5, 1112)))
-                val sesionacrual=call.sessions.get<CartSession>()
                 numeroUsurActivos++
-                call.respond(mensaje("Acceso concedido ${call.sessions.get<CartSession>()}"))
+                numeroUsuariosHistóricos++
+                call.sessions.set(CartSession(userID = "user"+numeroUsuariosHistóricos, productIDs = mutableListOf(numeroUsuariosHistóricos)))
+               call.respond(mensaje("Acceso concedido ${call.sessions.get<CartSession>()}"))
             }else{
                 call.respond(mensaje("El servidor no acepta más usuarios"))
             }

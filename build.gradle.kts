@@ -42,6 +42,8 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     // control de sesiones
     implementation("io.ktor:ktor-server-sessions:$ktor_version")
+    // autentificación
+    implementation("io.ktor:ktor-server-auth:$ktor_version")
 }
 
 // Servidor

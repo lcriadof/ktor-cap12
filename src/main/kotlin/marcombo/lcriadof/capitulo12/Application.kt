@@ -29,4 +29,5 @@ fun Application.module() { // [2]
     // configureRouting() // [4]
     configureSesionesEnServidor() // [5] gestion de las sesiones
     configureRoutingVerbos() // [6] gestion de verbos
+    configureAuthentication() // [7] autentificaciones
 }
