@@ -1,5 +1,5 @@
 # ktor-cap12
-Para probar el servicio RESTful es útil utilizar la herrramienta [PostMan](https://www.postman.com/). Aqui dejo las colecciones de ejemplo, que puedes importarlo y ejecutarlo desde PostMan
+Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https://www.postman.com/). Aqui dejo las colecciones de ejemplo, que puedes importarlo y ejecutarlo desde PostMan
 
   COLECCIÓN PROBAR: [conjugación infinitivo a presente de indicativo](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_verbos.postman_collection.json)
 
