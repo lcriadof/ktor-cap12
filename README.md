@@ -7,6 +7,7 @@ Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https:/
   
   COLECCIÓN PROBAR: [autentificación](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_autentificacion.postman_collection.json)
 
+  PARA PROBAR en una instalación real de TOMCAT o un DOCKER con TOMCAT: [autentificación](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_autentificacion.postman_collection.json)
 
 
 SOBRE EL [AUTOR](http://luis.criado.online/) 	
