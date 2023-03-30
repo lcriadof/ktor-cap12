@@ -13,16 +13,16 @@ Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni auten
     
     
 
-  PUT  http://127.0.0.1:8080/verbo/add1
-  con body(raw, JSON)
-  {
-   "verbo": "ser"
-  }
-  
-  PUT  http://127.0.0.1:8080/verbo/conjugar
-  devuelve:
-  [
-  {
+    PUT  http://127.0.0.1:8080/verbo/add1
+    con body(raw, JSON)    
+    {
+      "verbo": "ser"
+    }
+      
+    PUT  http://127.0.0.1:8080/verbo/conjugar
+    devuelve:
+    [
+    {
     "verbo": "cantar",
     "forma": "Presente indicativo",
     "conjugacion": {
@@ -33,8 +33,8 @@ Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni auten
       "vosotros": "cantáis",
       "ellos": "cantan"
     }
-  },
-  {
+    },
+    {
     "verbo": "ser",
     "forma": "Presente indicativo",
     "conjugacion": {
@@ -45,8 +45,8 @@ Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni auten
       "vosotros": "sois",
       "ellos": "son"
     }
-  }
-]
+    }
+    ]
   
 
 Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https://www.postman.com/downloads/). Aqui dejo las colecciones de ejemplo, que puedes importarlo y ejecutarlo desde PostMan
