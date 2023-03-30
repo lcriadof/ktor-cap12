@@ -3,11 +3,11 @@
 En este proyecto, las diferentes partes están implementadas independientemente con la finalidad de la simplicidad.
 Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni autentificación digest
 
-  PUT  http://127.0.0.1:8080/verbo/add1
-  con body(raw, JSON)
-  {
-   "verbo": "cantar"
-  }
+    PUT  http://127.0.0.1:8080/verbo/add1    
+    con body(raw, JSON)
+    {
+      "verbo": "cantar"    
+    }
 
   PUT  http://127.0.0.1:8080/verbo/add1
   con body(raw, JSON)
