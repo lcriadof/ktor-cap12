@@ -1,4 +1,50 @@
 # ktor-cap12
+
+En este proyecto, las diferentes partes están implementadas independientemente con la finalidad de la simplicidad.
+Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni autentificación digest
+
+  PUT  http://127.0.0.1:8080/verbo/add1
+  con body(raw, JSON)
+  {
+   "verbo": "cantar"
+  }
+
+  PUT  http://127.0.0.1:8080/verbo/add1
+  con body(raw, JSON)
+  {
+   "verbo": "ser"
+  }
+  
+  PUT  http://127.0.0.1:8080/verbo/conjugar
+  devuelve:
+  [
+  {
+    "verbo": "cantar",
+    "forma": "Presente indicativo",
+    "conjugacion": {
+      "yo": "canto",
+      "tu": "cantas",
+      "el": "canta",
+      "nosotros": "cantamos",
+      "vosotros": "cantáis",
+      "ellos": "cantan"
+    }
+  },
+  {
+    "verbo": "ser",
+    "forma": "Presente indicativo",
+    "conjugacion": {
+      "yo": "soy",
+      "tu": "eres",
+      "el": "es",
+      "nosotros": "somos",
+      "vosotros": "sois",
+      "ellos": "son"
+    }
+  }
+]
+  
+
 Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https://www.postman.com/downloads/). Aqui dejo las colecciones de ejemplo, que puedes importarlo y ejecutarlo desde PostMan
 
   COLECCIÓN PROBAR: [conjugación infinitivo a presente de indicativo](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_verbos.postman_collection.json)
