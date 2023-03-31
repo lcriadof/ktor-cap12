@@ -53,7 +53,7 @@ Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https:/
 
   COLECCIÓN PROBAR: [desde IDE](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/ktor_cap12%20desde%20IDE.postman_collection.zip)
 
-  COLECCIÓN PROBAR: [desde tomcat o docket-tomcat](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_sesiones.postman_collection.json)
+  COLECCIÓN PROBAR: [desde tomcat o docket-tomcat](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/ktor_cap12%20despleguado%20en%20tomcat%20o%20docker.postman_collection.zip)
   
   COLECCIÓN PROBAR: [autentificación](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_autentificacion.postman_collection.json)
 
