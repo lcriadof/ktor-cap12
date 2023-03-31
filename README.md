@@ -51,14 +51,9 @@ Dicho de otra forma, la parte de verbos no requiere ni envio de sesión ni auten
 
 Para probar el servicio REST es útil utilizar la herrramienta [PostMan](https://www.postman.com/downloads/). Aqui dejo las colecciones de ejemplo, que puedes importarlo y ejecutarlo desde PostMan
 
-  COLECCIÓN PROBAR: [desde IDE](/postman/colecciones/)
+  COLECCIONES PARA PROBAR: [desde IDE](/postman/colecciones/)
 
-  COLECCIÓN PROBAR: [desde tomcat o docket-tomcat](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/ktor_cap12%20despleguado%20en%20tomcat%20o%20docker.postman_collection.zip)
   
-  COLECCIÓN PROBAR: [autentificación](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/Probar%20ktor-cap12_autentificacion.postman_collection.json)
-
-  COLECCIÓN PARA PROBAR en una instalación real de TOMCAT o un DOCKER con TOMCAT: [conjugaciones, sesiones y autentificación](https://github.com/lcriadof/ktor-cap12/blob/master/postman/colecciones/despliegue%20en%20tomcat%20o%20docker.postman_collection.json)
-
 -
 
   SOBRE EL [AUTOR](http://luis.criado.online/) 	
